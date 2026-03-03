@@ -6,6 +6,7 @@
 After importing the cleaned CSV into BigQuery, several numeric fields were automaticallu interpreted as STRING types. This caused errors when running analytical queries. 
 To resolve this issue I created a new table using SAFE_CAST to convert these feilds into the correct numeric types. The SQL query I used to create the new table is as follows:
 
+```sql
 CREATE TABLE project-1-481514.churn_analysis.cleaned_telco_churn_fixed AS
 SELECT 
 CustomerID,
@@ -28,4 +29,5 @@ PaymentMethod,
 SAFE_CAST(MonthlyCharges AS FLOAT64) AS MonthlyCharges,
 SAFE_CAST(TotalCharges AS FLOAT64) AS TotalCharges,
 Churn
- FROM `project-1-481514.churn_analysis.cleaned_telco_churn` 
+ FROM `project-1-481514.churn_analysis.cleaned_telco_churn`
+```
