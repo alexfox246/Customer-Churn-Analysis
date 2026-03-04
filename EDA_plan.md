@@ -33,7 +33,11 @@ Churn
 ```
 The data is now ready for analysis in SQL
 
-## Overall churn rate
+## 1. Overall churn rate
+Churn rate = customers lost during period / customers at start of period  
+In our dataset we are given 'churn' as a boolean string type so our new equation will be:  
+Churn rate = Churn=true / customers at start of period  
+
 ```sql
 -- Total customers
 SELECT COUNT(*) AS total_customers
@@ -55,3 +59,5 @@ SELECT COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
 FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed;
 ```
 The churn rate is 26.54%
+
+## 2. 
