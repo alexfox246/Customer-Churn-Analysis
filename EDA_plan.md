@@ -38,13 +38,20 @@ The data is now ready for analysis in SQL
 -- Total customers
 SELECT COUNT(*) AS total_customers
 FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed;
+```
+The total number of customers is 7043
 
+```sql
 -- Churned customers
 SELECT COUNT(*) AS churned_customers
 FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed 
 WHERE Churn = true;
+```
+The total number of churned customers is 1869
 
+```sql
 -- Churn rate
 SELECT COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
 FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed;
 ```
+The churn rate is 26.54%
