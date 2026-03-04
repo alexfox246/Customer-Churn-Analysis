@@ -77,4 +77,4 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY Contract
 ORDER BY churn_rate DESC;
 ```
-![Churn by contract type](./churn_by_contract.png)
+
