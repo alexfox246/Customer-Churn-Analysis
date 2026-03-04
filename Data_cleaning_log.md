@@ -1,6 +1,6 @@
 ## Step 1: Import and inspect the raw data
-Goal: Understand what you're dealing with before changing anything.
-Action: Loaded raw dataset: 7043 rows, 21 columns. Columns include CustomerID, Gender, Tenure, MonthlyCharges, TotalCharges, Churn.
+- Goal: Understand what you're dealing with before changing anything.
+- Action: Loaded raw dataset: 7043 rows, 21 columns. Columns include CustomerID, Gender, Tenure, MonthlyCharges, TotalCharges, Churn.
 
 ## Step 2: Check for duplicates
 Goal: Ensure each custoer appears once.
