@@ -28,7 +28,9 @@ PaperlessBilling,
 PaymentMethod,
 SAFE_CAST(MonthlyCharges AS FLOAT64) AS MonthlyCharges,
 SAFE_CAST(TotalCharges AS FLOAT64) AS TotalCharges,
-Churn
+Churn,
+TenureGroup,
+ChargeBucket
  FROM `project-1-481514.churn_analysis.cleaned_telco_churn`
 ```
 The data is now ready for analysis in SQL
