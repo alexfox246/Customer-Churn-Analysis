@@ -94,3 +94,14 @@ ORDER BY churn_rate DESC;
 ```
 
 
+```sql
+-- Churn by monthly charge bucket
+SELECT 
+ ChargeBucket,
+ COUNT(*) AS total_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END) AS churned_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
+FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed 
+GROUP BY ChargeBucket
+ORDER BY churn_rate DESC;
+```
