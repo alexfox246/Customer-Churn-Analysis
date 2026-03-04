@@ -77,3 +77,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY Contract
 ORDER BY churn_rate DESC;
 ```
+Contract,total_customers,churned_customers,churn_rate
+Month-to-month,3875,1655,0.42709677419354841
+One year,1473,166,0.11269517990495587
+Two year,1695,48,0.02831858407079646
