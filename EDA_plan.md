@@ -92,7 +92,12 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY TenureGroup
 ORDER BY churn_rate DESC;
 ```
-![Churn by tenure group](./churn_by_tenure.png)
+![Churn by tenure group](./churn_by_tenure.png)  
+- Month-to-month: 43% churn rate  
+- One-year contract: 11% churn rate  
+- Two-year contract: 3% churn rate
+Customers on month-to-month contracts churn at a significantly higher rate than customers on longer-term contracts, making contract type one of the strongest predictors of churn.
+This pattern suggests that customers with greater flexibility are more likely to leave, while longer-term contracts create stability and reduce churn.
 
 ```sql
 -- Churn by monthly charge bucket
