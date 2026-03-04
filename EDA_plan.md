@@ -31,3 +31,20 @@ SAFE_CAST(TotalCharges AS FLOAT64) AS TotalCharges,
 Churn
  FROM `project-1-481514.churn_analysis.cleaned_telco_churn`
 ```
+The data is now ready for analysis in SQL
+
+## Overall churn rate
+```sql
+-- Total customers
+SELECT COUNT(*) AS total_customers
+FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed;
+
+-- Churned customers
+SELECT COUNT(*) AS churned_customers
+FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed 
+WHERE Churn = true;
+
+-- Churn rate
+SELECT COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
+FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed;
+```
