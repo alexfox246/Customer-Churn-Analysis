@@ -1,3 +1,5 @@
+## Data Cleaning Process
+This repository contains the full data-cleaning process for the Telco Customer Churn dataset. The goal of this stage was to prepare the raw data for analysisby correcting 
 ## Step 1: Import and inspect the raw data
 - Goal: Understand what you're dealing with before changing anything.
 - Action: Loaded raw dataset: 7043 rows, 21 columns. Columns include CustomerID, Gender, Tenure, MonthlyCharges, TotalCharges, Churn.
