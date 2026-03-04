@@ -58,6 +58,22 @@ The total number of churned customers is 1869
 SELECT COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
 FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed;
 ```
-The churn rate is 26.54%
+1869/7043 = 0.265369...  
+Therefore our churn rate equals 26.54%
 
-## 2. 
+## 2. Churn by customer segments 
+In this part we will answer:  
+- Which segments churn the most?
+- How does churn vary by contract, tenure, charges, etc.?
+
+```sql
+-- Churn by contract type
+SELECT 
+ Contract,
+ COUNT(*) AS total_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END) AS churned_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
+FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed 
+GROUP BY Contract
+ORDER BY churn_rate DESC;
+```
