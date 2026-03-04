@@ -84,7 +84,8 @@ ORDER BY churn_rate DESC;
 
 - Month-to-month: 42.7% churn rate  
 - One-year contract: 11.3% churn rate  
-- Two-year contract: 2.8% churn rate  
+- Two-year contract: 2.8% churn rate
+
 Customers on month-to-month contracts churn at a significantly higher rate than customers on longer-term contracts, making contract type one of the strongest predictors of churn.
 This pattern suggests that customers with greater flexibility are more likely to leave, while longer-term contracts create stability and reduce churn.
 
@@ -106,6 +107,7 @@ ORDER BY churn_rate DESC;
 - 1-2 years: 28.7% churn rate
 - 2-4 years: 20.4% churn rate
 - 4+ years: 9.5% churn rate
+
 Nearly half of all customers in their first year churn, and almost one-third leave within two years. This tells us that customers who have not yet built loyalty or perceived value are far more likely to leave. Churn declines steadily as tenure increases, indicating that long-standing customers are significantly more stable. 
 
 ## 2.3 Churn by monthly charge bucket
@@ -124,5 +126,6 @@ ORDER BY churn_rate DESC;
 
 - High charges: 33.9%  
 - Medium charges: 29.5%  
-- Low charges: 11.6%  
+- Low charges: 11.6%
+
 Churn increases significantly as monthly charges rise, indicating that higher-paying customers are more likley to feel dissatisfied or perceive lower value for money. The jump from low to medium charges is especially steep, indicating that customers moving into mid-tier plans experience a mismatch between expectations and actual service quality. Retaining medium and high charge customers should be a priority, as they contribute more revenue and churn at higher rates.
