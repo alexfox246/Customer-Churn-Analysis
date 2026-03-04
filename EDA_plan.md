@@ -78,3 +78,5 @@ GROUP BY Contract
 ORDER BY churn_rate DESC;
 ```
 ![Churn by contract type](./churn_by_contract.png)
+
+
