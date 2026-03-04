@@ -79,7 +79,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY Contract
 ORDER BY churn_rate DESC;
 ```
-
+![Churn by contract type](./churn_by_contract.png)
 
 ```sql
 -- Churn by tenure group
@@ -92,7 +92,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY TenureGroup
 ORDER BY churn_rate DESC;
 ```
-
+![Churn by tenure group](./churn_by_tenure.png)
 
 ```sql
 -- Churn by monthly charge bucket
@@ -105,3 +105,4 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY ChargeBucket
 ORDER BY churn_rate DESC;
 ```
+![Churn by monthly charge bucket](./churn_by_chargebucket.png)
