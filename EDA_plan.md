@@ -80,7 +80,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY Contract
 ORDER BY churn_rate DESC;
 ```
-![Churn by contract type](./churn_by_contract.png)  
+![Churn by contract type](./Screenshots/churn_by_contract.png)  
 
 - Month-to-month: 42.7% churn rate  
 - One-year contract: 11.3% churn rate  
@@ -101,7 +101,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY TenureGroup
 ORDER BY churn_rate DESC;
 ```
-![Churn by tenure group](./churn_by_tenure.png)  
+![Churn by tenure group](./Screenshots/churn_by_tenure.png)  
 
 - New (0-12 months): 47.4% churn rate  
 - 1-2 years: 28.7% churn rate
@@ -122,7 +122,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY ChargeBucket
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./churn_by_chargebucket.png)
+![Churn by monthly charge bucket](./Screenshots/churn_by_chargebucket.png)
 
 - High charges: 33.9%  
 - Medium charges: 29.5%  
