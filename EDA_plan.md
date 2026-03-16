@@ -142,7 +142,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY InternetService
 ORDER BY churn_rate DESC;
 ```
-
+![Churn by monthly charge bucket](./Screenshots/churn_by_internet_service.png)
 
 - Fiber Optic: 41.89%
 - DSL: 18.96%
@@ -162,7 +162,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY PaymentMethod
 ORDER BY churn_rate DESC;
 ```
-
+![Churn by monthly charge bucket](./Screenshots/churn_by_payment_method.png)
 
 - Electronic check: 45.29%
 - Mailed check: 19.11%
