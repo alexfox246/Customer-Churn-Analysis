@@ -188,7 +188,7 @@ ORDER BY churn_rate DESC;
 
 - Month-to-month & High charges: 52.15%
 - Month-to-month & Medium charges: 42.15%
-- Month-to-month & Low charges: 25.76%
+- Month-to-month & Low charges: 25.76%  
 When multiple risk factors overlap - in this case contract type and monthly charges - churn rates rise sharply. Churn is highest when customers are both on month-to-month contracts and paying medium or high monthly charges. This makes sense from a behaviour perspective:
 - Month-to-month customers can switch easily.
 - Higher-paying customers are more price-sensitive and expect more value.
@@ -208,3 +208,5 @@ GROUP BY TenureGroup, PaymentMethod
 ORDER BY churn_rate DESC;
 ```
 ![Churn by monthly charge bucket](./Screenshots/churn_tenure_payment.png)
+
+Tenure and payment method interact strongly: early-tenure customers using manual payment methods churn at significantly higher rates than long-tenure customers using automatic payments. This shows that churn is driven by both customer maturity and billing friction. 
