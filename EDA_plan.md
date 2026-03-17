@@ -61,7 +61,7 @@ SELECT COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
 FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed;
 ```
 1869/7043 = 0.265369...  
-Therefore our churn rate equals 26.54%
+Therefore our churn rate is 26.54%
 
 # 2. Churn by customer segments 
 In this part we will answer:  
@@ -80,7 +80,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY Contract
 ORDER BY churn_rate DESC;
 ```
-![Churn by contract type](./Screenshots/churn_by_contract.png)  
+![Churn by contract type](./Screenshots/churn_contract.png)  
 
 - Month-to-month: 42.7% churn rate  
 - One-year contract: 11.3% churn rate  
@@ -100,7 +100,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY TenureGroup
 ORDER BY churn_rate DESC;
 ```
-![Churn by tenure group](./Screenshots/churn_by_tenure.png)  
+![Churn by tenure group](./Screenshots/churn_tenure.png)  
 
 - New (0-12 months): 47.4% churn rate  
 - 1-2 years: 28.7% churn rate
@@ -121,7 +121,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY ChargeBucket
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./Screenshots/churn_by_chargebucket.png)
+![Churn by monthly charge bucket](./Screenshots/churn_chargebucket.png)
 
 - High charges: 33.9%  
 - Medium charges: 29.5%  
@@ -142,7 +142,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY InternetService
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./Screenshots/churn_by_internet_service.png)
+![Churn by monthly charge bucket](./Screenshots/churn_internet_service.png)
 
 - Fiber Optic: 41.89%
 - DSL: 18.96%
@@ -162,7 +162,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY PaymentMethod
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./Screenshots/churn_by_payment_method.png)
+![Churn by monthly charge bucket](./Screenshots/churn_payment_method.png)
 
 - Electronic check: 45.29%
 - Mailed check: 19.11%
@@ -184,6 +184,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY Contract, ChargeBucket
 ORDER BY churn_rate DESC;
 ```
+![Churn by monthly charge bucket](./Screenshots/churn_contract_chargebucket.png)
 
 - Month-to-month & High charges: 52.15%
 - Month-to-month & Medium charges: 42.15%
@@ -206,3 +207,4 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY TenureGroup, PaymentMethod
 ORDER BY churn_rate DESC;
 ```
+![Churn by monthly charge bucket](./Screenshots/churn_tenure_payment.png)
