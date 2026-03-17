@@ -167,6 +167,6 @@ ORDER BY churn_rate DESC;
 - Electronic check: 45.29%
 - Mailed check: 19.11%
 - Bank transfer: 16.71%
-- Credit card: 15.24
+- Credit card: 15.24%
 
 Customers who pay via electronic check churn at significantly higher rates than customers using other payment methods, indicating that billing experience and payment preferences are key drivers of churn. The findings tell us that customers using manual or less convenient payment methods may experience more dissatisfaction, while automatic payment users are more stable. Encouraging customers to switch to automatic payments could significantly reduce churn.
