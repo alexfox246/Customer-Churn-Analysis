@@ -9,9 +9,9 @@ A subscription-based company is losing customers at a higher rate than expected.
 - What actions could reduce churn?
 
 ## Dataset
-Source: Telco Customer Churn dataset (Kaggle)
-Rows: 7043
-Original columns: 21
+Source: Telco Customer Churn dataset (Kaggle)  
+Rows: 7043  
+Original columns: 21  
 Key fields: CustomerID, Tenure, MonthlyCharges, TotalCharges, InternetService, Contract, PaymentMethod, Churn.
 
 ## Data cleaning summary
