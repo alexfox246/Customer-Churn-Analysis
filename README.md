@@ -99,4 +99,61 @@ ORDER BY churn_rate DESC;
 ![Churn by monthly charge bucket](./Screenshots/churn_payment_method.png)
 
 Customers who pay via electronic check churn at significantly higher rates than customers using other payment methods, indicating that billing experience and payment preferences are key drivers of churn. The findings tell us that customers using manual or less convenient payment methods may experience more dissatisfaction, while automatic payment users are more stable. Encouraging customers to switch to automatic payments could significantly reduce churn.
+
+## Churn by combined factors
+### Contract type vs Monthly charge
+```sql
+SELECT 
+ Contract,
+ ChargeBucket,
+ COUNT(*) AS total_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END) AS churned_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
+FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed 
+GROUP BY Contract, ChargeBucket
+ORDER BY churn_rate DESC;
+```
+![Churn by monthly charge bucket](./Screenshots/churn_contract_chargebucket.png)
+
+When multiple risk factors overlap - in this case contract type and monthly charges - churn rates rise sharply. Churn is highest when customers are both on month-to-month contracts and paying medium or high monthly charges. This makes sense from a behaviour perspective:
+- Month-to-month customers can switch easily.
+- Higher-paying customers are more price-sensitive and expect more value.
+
+In contrast, customers on one or two year contracts paying lower charges are far more stable.
+
+### Tenure group vs Payment method
+```sql
+SELECT 
+ TenureGroup,
+ PaymentMethod,
+ COUNT(*) AS total_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END) AS churned_customers,
+ COUNT(CASE WHEN Churn = true THEN 1 END)*1.0/COUNT(*) AS churn_rate
+FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed 
+GROUP BY TenureGroup, PaymentMethod
+ORDER BY churn_rate DESC;
+```
+![Churn by monthly charge bucket](./Screenshots/churn_tenure_payment.png)
+
+Tenure and payment method interact strongly: early-tenure customers using manual payment methods churn at significantly higher rates than long-tenure customers using automatic payments. This shows that churn is driven by both customer maturity and billing friction. 
+
+## Executive summary
+
+Churn in this dataset is driven by a number of different factors including:
+- Contract flexibility
+- Early-tenure vulnerability
+- High monthly charges
+- Manual payment methods
+
+Customers who fall into more than one of these categories churn at dramatically higher rates.
+
+### Key takeaways
+- Tenure Group is the strongest single predictor of churn
+Customers in their first year of subscribing churn at a rate of 47.44%.
+
+- Payment method strongly influences churn 
+Manual payment methods adds friction and correlates with churn. Shifting customrs to automatic payment methods is a low-cost, high-impact retention strategy.
+
+- Combined churn analysis shows that churn is driven by multiple overlapping risk factors, not single variables
+
 ## Recommendations
