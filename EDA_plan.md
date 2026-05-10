@@ -105,8 +105,6 @@ ORDER BY churn_rate DESC;
 - 2-4 years: 20.39% churn rate
 - 4+ years: 9.51% churn rate
 
-Nearly half of all customers in their first year churn, and almost one-third leave within two years. This tells us that customers who have not yet built loyalty or perceived value are far more likely to leave. Churn declines steadily as tenure increases, indicating that long-standing customers are significantly more stable. Focusing retention strategies on customers in their first 12 to 24 months offers the greatest opportunity to reduce overall churn. Improving onboarding, providing early-life support and proactively adressing service issues could improve retention. 
-
 ## 2.3 Churn by monthly charge 
 ```sql
 -- Churn by monthly charge bucket
@@ -124,8 +122,6 @@ ORDER BY churn_rate DESC;
 - High charges: 33.98%  
 - Medium charges: 29.53%  
 - Low charges: 11.59%
-
-Churn increases significantly as monthly charges rise, indicating that higher-paying customers are more likley to feel dissatisfied or perceive lower value for money. The jump from low to medium charges is especially steep, indicating that customers moving into mid-tier plans experience a mismatch between expectations and actual service quality. Retaining medium and high charge customers should be a priority, as they contribute more revenue and churn at higher rates. Improving the value proposition in these segments through pricing adjustments,  exclusive benefits and enhanced service experince could reduce churn.
 
 # 3. Churn by service and payment method
 ## 3.1 Churn by internet service type
@@ -146,8 +142,6 @@ ORDER BY churn_rate DESC;
 - DSL: 18.96%
 - None: 7.4%
 
-Customers using fiber optic internet churn at significantly higher rates than those using DSL and those with no internet service. Fiber optic customers tend to pay higher monthly charges for their internet in return for faster browsing speeds and reliability. If those expectations are not met - or if competitors offer similar speeds at lower prices - these customers may be more likely to switch providers. Improving reliability, reviewing pricing, and offering targeted retention incentives could meaningfully reduce churn.
-
 ## 3.2 Churn by payment method
 ```sql
 -- Churn by Payment method
@@ -166,8 +160,6 @@ ORDER BY churn_rate DESC;
 - Mailed check: 19.11%
 - Bank transfer: 16.71%
 - Credit card: 15.24%
-
-Customers who pay via electronic check churn at significantly higher rates than customers using other payment methods, indicating that billing experience and payment preferences are key drivers of churn. The findings tell us that customers using manual or less convenient payment methods may experience more dissatisfaction, while automatic payment users are more stable. Encouraging customers to switch to automatic payments could significantly reduce churn.
 
 # 4. Churn by combined factors
 ## 4.1 Contract type vs Monthly charge
