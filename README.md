@@ -152,10 +152,14 @@ Customers who fall into more than one of these categories churn at dramatically 
 Customers in their first year of subscribing churn at a rate of 47.44%.
 
 #### - Payment method strongly influences churn   
-Manual payment methods (especially electronic check) adds friction and correlates with churn. Shifting customrs to automatic payment methods is a low-cost, high-impact retention strategy.
+Manual payment methods (especially electronic check) adds friction and correlates with churn. Shifting customers to automatic payment methods is a low-cost, high-impact retention strategy.
 
-#### - Customers on month to month contracts paying high and medium monthly charges churn at significantly high rates
+#### - Contract type is a significant single predictor of churn  
+Customers on month to month contracts churn at a rate of 42.71%
 
-#### - Combined churn analysis shows that churn is driven by multiple overlapping risk factors, not single variables
+#### - Combined churn analysis shows that churn is driven by multiple overlapping risk factors, not single variables   
+Month to month + high monthly charges = 52.15%   
+Month to month + medium monthly charges = 42.15%   
+New customers paying via electronic check = 61.96%
 
 ## Recommendations
