@@ -148,14 +148,14 @@ Churn in this dataset is driven by a number of different factors including:
 Customers who fall into more than one of these categories churn at dramatically higher rates.
 
 # Key insights
-- Tenure Group is the strongest single predictor of churn   
+#### - Tenure Group is the strongest single predictor of churn   
 Customers in their first year of subscribing churn at a rate of 47.44%.
 
-- Payment method strongly influences churn   
+#### - Payment method strongly influences churn   
 Manual payment methods (especially electronic check) adds friction and correlates with churn. Shifting customrs to automatic payment methods is a low-cost, high-impact retention strategy.
 
-- Customers on month to month contracts paying high and medium monthly charges churn at significantly high rates
+#### - Customers on month to month contracts paying high and medium monthly charges churn at significantly high rates
 
-- Combined churn analysis shows that churn is driven by multiple overlapping risk factors, not single variables
+#### - Combined churn analysis shows that churn is driven by multiple overlapping risk factors, not single variables
 
 ## Recommendations
