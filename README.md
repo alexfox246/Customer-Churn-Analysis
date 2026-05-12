@@ -34,7 +34,7 @@ ORDER BY churn_rate DESC;
 ```
 ![Churn by contract type](./Screenshots/churn_contract.png)  
 
-Customers on month-to-month contracts churn at a significantly higher rate than customers on longer-term contracts, making contract type one of the strongest predictors of churn. This pattern suggests that customers with greater flexibility are more likely to leave, while longer-term contracts create stability and reduce churn. Focusing retention strategies on month-to-month customers such as offering discounts for contract upgrades or improving early stage onboarding could reduce churn.
+Customers on month-to-month contracts churn at a significantly higher rate than customers on longer-term contracts, making contract type one of the strongest predictors of churn. This pattern suggests that customers with greater flexibility are more likely to leave, while longer-term contracts create stability and reduce churn.
 
 ### Churn by tenure group
 ```sql
@@ -50,7 +50,7 @@ ORDER BY churn_rate DESC;
 ```
 ![Churn by tenure group](./Screenshots/churn_tenure.png)  
 
-Nearly half of all customers in their first year churn, and almost one-third leave within two years. This tells us that customers who have not yet built loyalty or perceived value are far more likely to leave. Churn declines steadily as tenure increases, indicating that long-standing customers are significantly more stable. Focusing retention strategies on customers in their first 12 to 24 months offers the greatest opportunity to reduce overall churn. Improving onboarding, providing early-life support and proactively adressing service issues could improve retention. 
+Nearly half of all customers in their first year churn, and almost one-third leave within two years. This tells us that customers who have not yet built loyalty or perceived value are far more likely to leave. Churn declines steadily as tenure increases, indicating that long-standing customers are significantly more stable. 
 
 ### Churn by monthly charge 
 ```sql
@@ -66,7 +66,7 @@ ORDER BY churn_rate DESC;
 ```
 ![Churn by monthly charge bucket](./Screenshots/churn_chargebucket.png)
 
-Churn increases significantly as monthly charges rise, indicating that higher-paying customers are more likley to feel dissatisfied or perceive lower value for money. The jump from low to medium charges is especially steep, indicating that customers moving into mid-tier plans experience a mismatch between expectations and actual service quality. Retaining medium and high charge customers should be a priority, as they contribute more revenue and churn at higher rates. Improving the value proposition in these segments through pricing adjustments,  exclusive benefits and enhanced service experince could reduce churn.
+Churn increases significantly as monthly charges rise, indicating that higher-paying customers are more likley to feel dissatisfied or perceive lower value for money. The jump from low to medium charges is especially steep, indicating that customers moving into mid-tier plans experience a mismatch between expectations and actual service quality. Retaining medium and high charge customers should be a priority, as they contribute more revenue and churn at higher rates. 
 
 ### Churn by internet service type
 ```sql
@@ -98,7 +98,7 @@ ORDER BY churn_rate DESC;
 ```
 ![Churn by monthly charge bucket](./Screenshots/churn_payment_method.png)
 
-Customers who pay via electronic check churn at significantly higher rates than customers using other payment methods, indicating that billing experience and payment preferences are key drivers of churn. The findings tell us that customers using manual or less convenient payment methods may experience more dissatisfaction, while automatic payment users are more stable. Encouraging customers to switch to automatic payments could significantly reduce churn.
+Customers who pay via electronic check churn at significantly higher rates than customers using other payment methods, indicating that billing experience and payment preferences are key drivers of churn. The findings tell us that customers using manual or less convenient payment methods may experience more dissatisfaction, while automatic payment users are more stable. 
 
 ## Churn by combined factors
 ### Contract type vs Monthly charge
@@ -147,7 +147,7 @@ Churn in this dataset is driven by a number of different factors including:
 
 Customers who fall into more than one of these categories churn at dramatically higher rates.
 
-# Key insights
+## Key insights
 #### - Tenure Group is the strongest single predictor of churn   
 Customers in their first year of subscribing churn at a rate of 47.44%.
 
@@ -162,4 +162,33 @@ Month to month + high monthly charges = 52.15%
 Month to month + medium monthly charges = 42.15%   
 New customers paying via electronic check = 61.96%
 
-## Recommendations
+## Business recommendations   
+### 1. Targeted retention for month‑to‑month customers   
+Month-to-month customers churn at a rate of 42.71% making them the third single highest risk group. These customers have no commitment barrier and can leave at any time.   
+Recommended actions:
+- Introduce contract-upgrade incentives, such as discounted first-year pricing or added service benefits like free installations or service add-ons.
+- Offer loyalty rewards for switching to annual or two-year contracts.
+- Provide personalised outreach to month-to-month customers within their first 90 days, when churn is highest.
+
+### 2. Stronger onboarding for first‑year customers  
+Customers in their first 12 months churn at a rate of 47.44% making them the highest single predictor of churn. Focusing retention strategies on these customers offers the greatest opportunity to reduce overall churn.   
+Recommended actions:
+- Implement a structured onboarding programme that welcome emails, service tips, and support check-ins.
+- Monitor early-tenure customers for service issues, billing problems, or usage drops.
+- Provide proactive support and usage education during the first 30-90 days, when dissatisfaction typically emerges.
+
+### 3. Encourage customers to switch to automatic payments
+Electronic check users churn at 45.29%, the highest of all payment methods. Manual payment methods introduce friction and increase the likelehood of missed or late payments.
+Recommended actions:
+- Offer small incentives such as, £5 credit vouchers or loyalty points, for switching to automatic payments.
+- Highlight and emphasize the convenience and reliability of automatic billing during onboarding.
+- Identify electronic check users in early tenure and target them with payment method upgrade campaigns.
+- Set up a payment failure alert system to prevent involuntary churn.
+
+### 4. Review pricing and value for medium and high charge buckets
+Customers paying higher monthly charges show significantly higher churn rates. This suggests there is price sensitivity or a mismatch between cost and percieved value.
+Recommended actions:
+- Conduct a value-perception review for medium and high charge plans and improve the value proposition through pricing adjustments.
+- Offer enhanced business services, lotalty discounts, or exclusive benefits to justify higher pricing.
+- Provide transparent communication about what customers receive for their plan tier.
+
