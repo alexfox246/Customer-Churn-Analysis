@@ -89,7 +89,7 @@ ORDER BY churn_rate DESC;
 ```
 ![Churn by internet_service](./Screenshots/churn_internet_service.png)
 
-Customers using fiber optic internet churn at significantly higher rates than those using DSL and those with no internet service. Fiber optic customers tend to pay higher monthly charges for their internet in return for faster browsing speeds and reliability. If those expectations are not met - or if competitors offer similar speeds at lower prices - these customers may be more likely to switch providers. Improving reliability, reviewing pricing, and offering targeted retention incentives could meaningfully reduce churn.
+Customers using fiber optic internet churn at significantly higher rates than those using DSL and those with no internet service. Fiber optic customers tend to pay higher monthly charges for their internet in return for faster browsing speeds and reliability. If those expectations are not met - or if competitors offer similar speeds at lower prices - these customers may be more likely to switch providers.
 
 ### Churn by payment method
 ```sql
@@ -159,19 +159,19 @@ Customers who fall into more than one of these categories churn at dramatically 
 Customers in their first year of subscribing churn at a rate of 47.44%.
 
 #### - Payment method strongly influences churn   
-Manual payment methods (especially electronic check) adds friction and correlates with churn. Shifting customers to automatic payment methods is a low-cost, high-impact retention strategy.
+Manual payment methods (especially electronic check) add friction and correlates with churn. Shifting customers to automatic payment methods is a low-cost, high-impact retention strategy.
 
 #### - Contract type is a significant single predictor of churn  
-Customers on month to month contracts churn at a rate of 42.71%
+Customers on month-to-month contracts churn at a rate of 42.71%
 
 #### - Combined churn analysis shows that churn is driven by multiple overlapping risk factors, not single variables   
-Month to month + high monthly charges = 52.15%   
-Month to month + medium monthly charges = 42.15%   
+Month-to-month + high monthly charges = 52.15%   
+Month-to-month + medium monthly charges = 42.15%   
 New customers paying via electronic check = 61.96%
 
 ## Business recommendations   
 ### 1. Targeted retention for month‑to‑month customers   
-Month-to-month customers churn at a rate of 42.71% making them the third single highest risk group. These customers have no commitment barrier and can leave at any time.   
+Month-to-month customers churn at a rate of 42.71% making them the third-highest single risk group. These customers have no commitment barrier and can leave at any time.   
 Recommended actions:
 - Introduce contract-upgrade incentives, such as discounted first-year pricing or added service benefits like free installations or service add-ons.
 - Offer loyalty rewards for switching to annual or two-year contracts.
@@ -180,22 +180,22 @@ Recommended actions:
 ### 2. Stronger onboarding for first‑year customers  
 Customers in their first 12 months churn at a rate of 47.44% making them the highest single predictor of churn. Focusing retention strategies on these customers offers the greatest opportunity to reduce overall churn.   
 Recommended actions:
-- Implement a structured onboarding programme that welcome emails, service tips, and support check-ins.
+- Implement a structured onboarding programme that includes welcome emails, service tips, and support check-ins.
 - Monitor early-tenure customers for service issues, billing problems, or usage drops.
 - Provide proactive support and usage education during the first 30-90 days, when dissatisfaction typically emerges.
 
 ### 3. Encourage customers to switch to automatic payments
-Electronic check users churn at 45.29%, the highest of all payment methods. Manual payment methods introduce friction and increase the likelehood of missed or late payments.
+Electronic check users churn at 45.29%, the highest of all payment methods. Manual payment methods introduce friction and increase the likelihood of missed or late payments.
 Recommended actions:
 - Offer small incentives such as, £5 credit vouchers or loyalty points, for switching to automatic payments.
-- Highlight and emphasize the convenience and reliability of automatic billing during onboarding.
+- Highlight and emphasise the convenience and reliability of automatic billing during onboarding.
 - Identify electronic check users in early tenure and target them with payment method upgrade campaigns.
 - Set up a payment failure alert system to prevent involuntary churn.
 
 ### 4. Review pricing and value for medium and high charge buckets
-Customers paying higher monthly charges show significantly higher churn rates. This suggests there is price sensitivity or a mismatch between cost and percieved value.
+Customers paying higher monthly charges show significantly higher churn rates. This suggests there is price sensitivity or a mismatch between cost and perceived value.
 Recommended actions:
 - Conduct a value-perception review for medium and high charge plans and improve the value proposition through pricing adjustments.
-- Offer enhanced business services, lotalty discounts, or exclusive benefits to justify higher pricing.
+- Offer enhanced business services, loyalty discounts, or exclusive benefits to justify higher pricing.
 - Provide transparent communication about what customers receive for their plan tier.
 
