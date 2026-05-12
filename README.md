@@ -102,7 +102,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY PaymentMethod
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./Screenshots/churn_payment_method.png)
+![Churn by payment_method](./Screenshots/churn_payment_method.png)
 
 Customers who pay via electronic check churn at significantly higher rates than customers using other payment methods, indicating that billing experience and payment preferences are key drivers of churn. The findings tell us that customers using manual or less convenient payment methods may experience more dissatisfaction, while automatic payment users are more stable. 
 
@@ -119,7 +119,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY Contract, ChargeBucket
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./Screenshots/churn_contract_chargebucket.png)
+![Churn by contract chargebucket](./Screenshots/churn_contract_chargebucket.png)
 
 When multiple risk factors overlap - in this case contract type and monthly charges - churn rates rise sharply. Churn is highest when customers are both on month-to-month contracts and paying medium or high monthly charges. This makes sense from a behaviour perspective:
 - Month-to-month customers can switch easily.
@@ -139,7 +139,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY TenureGroup, PaymentMethod
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./Screenshots/churn_tenure_payment.png)
+![Churn by tenure_payment](./Screenshots/churn_tenure_payment.png)
 
 Tenure and payment method interact strongly: early-tenure customers using manual payment methods (electronic and mailed checks) churn at significantly higher rates than long-tenure customers using automatic payments. This shows that churn is driven by both customer maturity and billing friction. 
 
