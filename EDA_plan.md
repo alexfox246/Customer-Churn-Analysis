@@ -4,7 +4,7 @@
 
 # Data preperation in BigQuery
 After importing the cleaned CSV into BigQuery, several numeric fields were automatically interpreted as STRING types. This caused errors when running analytical queries. 
-To resolve this issue I created a new table using SAFE_CAST to convert these feilds into the correct numeric types. The SQL query I used to create the new table is as follows:
+To resolve this issue I created a new table using SAFE_CAST to convert these feilds into the correct numeric types. The SQL query I used to create the new table is as follows: 
 
 ```sql
 CREATE TABLE project-1-481514.churn_analysis.cleaned_telco_churn_fixed AS
