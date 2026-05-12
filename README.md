@@ -1,6 +1,6 @@
 # Customer-Churn-Analysis
 ## Project overview
-A subscription-based company is losing customers at a higher rate than expected and managers want to understand why. As a reminder, for this scenario churn is the rate at which customers are cancelling their subscriptions over a given period. The objective of this project is to understand which customers are most likely to churn, why, and what actions are needed to reduce churn. 
+A subscription-based company is losing customers at a higher rate than expected and managers want to understand why. In this scenario, churn refers to the rate at which customers cancel their subscriptions over a given period. The objective of this project is to understand which customers are most likely to churn, why they churn, and what actions are needed to reduce churn. 
 
 ## Key questions to answer:
 - What is the overall churn rate?
@@ -15,9 +15,15 @@ Original columns: 21
 Key fields: CustomerID, Tenure, MonthlyCharges, TotalCharges, InternetService, Contract, PaymentMethod, Churn.
 
 ## Data cleaning summary
-The purpose of this stage is to tranform the raw CSV file into clean, reliable, analysis-ready data. The cleaning process included intial inspection, duplicate checks, data type correction, handling of missing values, categorical standardisation, feature engineering and final validation.
-
-A full step-by-step breakdown of every action applied during the data cleaning is available in the file data_cleaning_log.md
+The purpose of this stage is to tranform the raw CSV file into clean, reliable, analysis-ready data. The cleaning process included:
+- Intial inspection
+- Duplicate checks
+- Data type correction
+- Handling of missing values
+- Categorical standardisation
+- Feature engineering
+- Final validation   
+A full step-by-step breakdown of every action applied during the data cleaning process is available in data_cleaning_log.md
 
 ## Analysis and insights
 ### Churn by contract type
@@ -66,7 +72,7 @@ ORDER BY churn_rate DESC;
 ```
 ![Churn by monthly charge bucket](./Screenshots/churn_chargebucket.png)
 
-Churn increases significantly as monthly charges rise, indicating that higher-paying customers are more likley to feel dissatisfied or perceive lower value for money. The jump from low to medium charges is especially steep, indicating that customers moving into mid-tier plans experience a mismatch between expectations and actual service quality. Retaining medium and high charge customers should be a priority, as they contribute more revenue and churn at higher rates. 
+Churn increases significantly as monthly charges rise, indicating that higher-paying customers are more likely to feel dissatisfied or perceive lower value for money. The jump from low to medium charges is especially steep, indicating that customers moving into mid-tier plans experience a mismatch between expectations and actual service quality. Retaining medium and high charge customers should be a priority, as they contribute more revenue and churn at higher rates. 
 
 ### Churn by internet service type
 ```sql
