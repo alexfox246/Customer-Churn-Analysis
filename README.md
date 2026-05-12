@@ -26,6 +26,7 @@ The purpose of this stage is to tranform the raw CSV file into clean, reliable, 
 A full step-by-step breakdown of every action applied during the data cleaning process is available in data_cleaning_log.md
 
 ## Analysis and insights
+The total number of customers is 7043. 1869 of those customers have churned so our overall churn rate is 26.54%. In this section we will analyse which variables have the strongest impact on churn.
 ### Churn by contract type
 ```sql
 -- Churn by contract type
