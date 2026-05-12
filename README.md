@@ -1,6 +1,6 @@
 # Customer-Churn-Analysis
 ## Project overview
-A subscription-based company is losing customers at a higher rate than expected. Managers want to understand which customers are most likely to churn, why, and what actions are needed to reduce churn.
+A subscription-based company is losing customers at a higher rate than expected and managers want to understand why. As a reminder, for this scenario churn is the rate at which customers are cancelling their subscriptions over a given period. The objective of this project is to understand which customers are most likely to churn, why, and what actions are needed to reduce churn. 
 
 ## Key questions to answer:
 - What is the overall churn rate?
