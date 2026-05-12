@@ -86,7 +86,7 @@ FROM project-1-481514.churn_analysis.cleaned_telco_churn_fixed
 GROUP BY InternetService
 ORDER BY churn_rate DESC;
 ```
-![Churn by monthly charge bucket](./Screenshots/churn_internet_service.png)
+![Churn by internet_service](./Screenshots/churn_internet_service.png)
 
 Customers using fiber optic internet churn at significantly higher rates than those using DSL and those with no internet service. Fiber optic customers tend to pay higher monthly charges for their internet in return for faster browsing speeds and reliability. If those expectations are not met - or if competitors offer similar speeds at lower prices - these customers may be more likely to switch providers. Improving reliability, reviewing pricing, and offering targeted retention incentives could meaningfully reduce churn.
 
