@@ -22,7 +22,8 @@ The purpose of this stage is to tranform the raw CSV file into clean, reliable, 
 - Handling of missing values
 - Categorical standardisation
 - Feature engineering
-- Final validation   
+- Final validation
+
 A full step-by-step breakdown of every action applied during the data cleaning process is available in data_cleaning_log.md
 
 ## Analysis and insights
