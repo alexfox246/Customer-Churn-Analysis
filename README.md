@@ -203,4 +203,4 @@ Recommended actions:
 Churn is driven by a mix of contract flexibility, early-tenure risk, payment friction and high monthly charges. The fastest wins come from locking in commitment, improving early expeience and reducing billing hassle. Prioritise month-to-month customers, encourage automatic payments and support new cutomers in their first year. Focus especially on combined-risk groups like early-tenure electronic-check users and high-charge month-to-month customers as these segments deliver the biggest retention gains for the least effort.
 
 
-Thank you for reading. Kindly contact me for any discussion on projects or job offers on: Email: alexfox246@yahoo.com Phone: 07480215827
+Thank you for reading. Kindly contact me for any discussions on projects or job offers on: Email: alexfox246@yahoo.com Phone: 07480215827
